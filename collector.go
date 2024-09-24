@@ -18,7 +18,7 @@ var (
 	// stale data within 30 minutes is plenty.
 	// Note that even an error response is cached, and the exporter
 	// will not query the cable modem until the cache expires.
-	cacheExpiry = 30 * time.Minute
+	cacheExpiry = 1 * time.Minute
 )
 
 type cableModemStatus struct {
